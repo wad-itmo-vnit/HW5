@@ -1,0 +1,79 @@
+body{
+    background-image: url('3.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+h1{
+    color: rgb(218, 218, 74);
+}
+img:hover{ 
+    border-radius: 0%;
+}
+img{
+    -webkit-transition: all 0.7s ease;
+    transition: all 0.7s ease;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.row{
+    display: table; 
+    width: 900px; 
+    margin: auto;
+    padding: 10px;
+}
+
+.col{
+    display: table-cell;
+    padding: 10px;
+}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+
+    padding-top: 50px; /* Location of the box */
+    left: 0px;
+    top: 0px;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+  
+  /* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 900px;
+    border-radius: 0%;
+}
+
+.modal-content {  
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+  
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #b9abab;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: rgb(223, 37, 37);
+  text-decoration: none;
+  cursor: pointer;
+}
+
