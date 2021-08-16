@@ -1,5 +1,8 @@
+* {
+    box-sizing: border-box;
+}
 body{
-    background-image: url('3.jpg');
+    background-image: linear-gradient(0, rgba(0, 183, 255, 0.2),rgba(122, 22, 180, 0.5)), url('3.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -7,6 +10,7 @@ body{
 
 h1{
     color: rgb(218, 218, 74);
+    text-align: center;
 }
 img:hover{ 
     border-radius: 0%;
@@ -42,6 +46,7 @@ img{
   
   /* Modal Content (image) */
 .modal-content {
+    background-color: white;
     margin: auto;
     display: block;
     width: 80%;
@@ -77,3 +82,43 @@ img{
   cursor: pointer;
 }
 
+.topnav {
+    overflow: hidden;
+    background-color: rgb(66, 9, 99);
+}
+
+.topnav a {
+    float: right;
+    display: block;
+    color: yellowgreen;
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
+    position: right;
+}
+
+.topnav a:hover {
+    background-color: blue;
+    color:yellow;
+    font-weight: bold;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 12px 0;
+    display: inline-block;
+    border: 1px soild gray;
+    box-sizing: border-box;
+}
+
+#but1 {
+    background-color:yellowgreen;
+    color: red;
+    font-size: large;
+    font-weight: bold;
+    padding: 14px 20px;
+    margin: 8px 0;
+    cursor: pointer;
+    width: 100%;
+}
